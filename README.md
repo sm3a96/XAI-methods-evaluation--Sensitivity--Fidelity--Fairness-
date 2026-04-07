@@ -6,7 +6,7 @@ This repository provides a comprehensive evaluation framework for assessing Expl
 
 Key finding: No single XAI method universally dominates. Method selection must be model-specific.
 
-![Framework Overview](Models/Framwork_1.jpg)
+![Framework Overview](Models/Framwork_1.png)
 
 ## Framework
 

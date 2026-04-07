@@ -1,30 +1,30 @@
 """
-Fairness Evaluation Framework for XAI Methods
+explanation robustness Evaluation Framework for XAI Methods
 
-Fairness measures whether XAI explanations are BIASED toward sensitive features
+explanation robustness measures whether XAI explanations are BIASED toward sensitive features
 like race, gender, or age. Fair explanations shouldn't change dramatically when
 only the protected attribute changes.
 
 
-Implement fairness assessment tool to measure bias and discrimination
+Implement explanation robustness assessment tool to measure bias and discrimination
 in XAI explanations (SHAP, LIME) against sensitive/protected features.
 
 Key Features:
-- Fairness evaluation via feature-flipping counterfactual analysis
+- explanation robustness evaluation via feature-flipping counterfactual analysis
 - MAD and cosine similarity metrics for bias detection
-- Multi-feature fairness comparison across protected attributes
+- Multi-feature explanation robustness comparison across protected attributes
 
 Metrics Provided:
 1. Mean Absolute Deviation (MAD): Explanation change magnitude
 2. Cosine Similarity: Explanation alignment consistency
-3. Combined Fairness Score: Normalized composite metric
+3. Combined explanation robustness Score: Normalized composite metric
 
 
 Mathematical Foundation:
 - Counterfactual analysis: Compare explanations when sensitive feature is flipped
 - Lower MAD = more fair (less sensitive to protected attributes)
 - Higher cosine similarity = more fair (consistent explanations)
-- Fairness Score = (normalized_inverted_MAD + normalized_cosine) / 2
+- explanation robustness Score = (normalized_inverted_MAD + normalized_cosine) / 2
 
 
 
